@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-
+void max(char *str)
 {
-    char str[5],all[4];
-    printf("Enter number: ");
-    scanf("%s",str);
+    char all[4];
     int temp=0;
     int max=0;
     for(int i=0;i<4;i++)
@@ -35,6 +32,17 @@ int main()
         }
     }
     printf("%d",max);
+
+}
+
+int main()
+{
+    char str1[5];
+    printf("Enter number: ");
+    scanf("%s",str1);
+    char *str=str1; 
+    max(str);
+    
 
     return 0;
 }
