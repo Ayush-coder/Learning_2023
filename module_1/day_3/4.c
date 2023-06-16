@@ -1,17 +1,7 @@
 #include <stdio.h>
 
-int main()
+void min_max(int size, long int *arr)
 {
-    int size;
-    printf("Enter size: ");
-    scanf("%d",&size);
-    long int arr[size];
-    
-    for(int i=0;i<size;i++)
-    {
-        scanf("%ld",&arr[i]);
-    }
-    
     for(int i=0;i<size;i++)
     {
         int temp=arr[i],temp1;
@@ -39,5 +29,21 @@ int main()
             printf("%d and %d\n",min,max);
         }
     }
+}
+
+int main()
+{
+    int size;
+    printf("Enter size: ");
+    scanf("%d",&size);
+    long int arr1[size];
+    for(int i=0;i<size;i++)
+    {
+        scanf("%ld",&arr1[i]);
+    }
+    long int *arr=arr1;
+    min_max(size,arr);
+    
+    
     return 0;
 }
