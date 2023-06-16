@@ -1,10 +1,7 @@
 #include <stdio.h>
 
-int main()
+void pattern(int size)
 {
-    int size;
-    printf("Enter size: ");
-    scanf("%d",&size);
     int n=size;
     int t=0;
     int l=1;
@@ -29,3 +26,11 @@ int main()
     }
 }
 
+int main()
+{
+    int size;
+    printf("Enter size: ");
+    scanf("%d",&size);
+    pattern(size);
+    
+}
